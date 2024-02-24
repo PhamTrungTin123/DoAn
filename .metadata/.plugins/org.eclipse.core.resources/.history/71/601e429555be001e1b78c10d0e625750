@@ -1,0 +1,40 @@
+package Model;
+
+public class Checkout extends Order {
+	public String username;
+	public String orderid;
+	public String country;
+	public String firstname;
+	public String lastname;
+	public String companyname;
+	public String address;
+	public String email;
+	public String phonenumber;
+	public String notes;
+	public String transfers;
+	public String checkoutdate;
+	public String status;
+	public Checkout(
+			String firstname, String lastname, String companyname, String address, String email2, String phonenumber,
+			String notes, String transfers, String checkoutdate, String status2) {
+		super(username, email, productname, quantity, prices, totalprice, date, status, orderid);
+		username = username2;
+		orderid = orderid2;
+		this.country = country;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.companyname = companyname;
+		this.address = address;
+		email = email2;
+		this.phonenumber = phonenumber;
+		this.notes = notes;
+		this.transfers = transfers;
+		this.checkoutdate = checkoutdate;
+		status = status2;
+	}
+	
+	
+}
+
+	
+	
